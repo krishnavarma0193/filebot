@@ -23,6 +23,9 @@ def get_connection(uri,db,collection):
         logging.info("Connection not established!!")
         return None
 
+def test():
+    return 1
+
 # Listing list of drive in system
 def list_drive():
     available_drives = ['%s:/' % d for d in string.ascii_uppercase if os.path.exists('%s:' % d)]
